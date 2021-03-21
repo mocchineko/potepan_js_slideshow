@@ -1,19 +1,46 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>
     <meta charset="UTF-8">
+    <title>スライドショー</title>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/slick.css">
+    <link rel="stylesheet" href="JS/slick-theme.css" type="text/css">
     <script src="https://code.jquery.com/jquery-3.2.1.js"
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <title>スライドショー</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="slick.css">
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <script src="slick.min.js"></script>
-    <script src="main.js"></script>
+    <div class="wrapper">
+        <h1>slickのスライドショー</h1>
+        <ul class="slick slick-slider">
+            <li>
+                <img alt="ケーキ" src="images/cake.jpg">
+            </li>
+            <li>
+                <img alt="キャンプ" src="images/camp.jpg">
+            </li>
+            <li>
+                <img alt="桜" src="images/cherry-blossom.jpg">
+            </li>
+            <li>
+                <img alt="ひよこ" src="images/hiyoko.jpg">
+            </li>
+            <li>
+                <img alt="船" src="images/ship.jpg">
+            </li>
+            <li>
+                <img alt="日の出" src="images/sunrise.jpg">
+            </li>
+        </ul>
+        <p>4秒ごとに自動でスライドします</p>
+        <p>左右の矢印を押下でスライドをさせることができます</p>
+    </div>
+    <script src="JS/slick.min.js"></script>
+    <script src="JS/main.js"></script>
 </body>
+
 </html>
